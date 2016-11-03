@@ -5,8 +5,10 @@ Created on 23 oct. 2016
 '''
 
 from django.db import models
+from BackEnd.Evento import Evento
+from BackEnd.Sector import Sector
 
 class Precio(models.Model):
-    idEvento = models.IntegerField()
-    idSector = models.IntegerField()
+    evento = models.ForeignKey(Evento, null=True)
+    sector = models.ForeignKey(Sector, null=True)
     precio = models.DecimalField(decimal_places=2,max_digits=10)

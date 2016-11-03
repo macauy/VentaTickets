@@ -5,7 +5,6 @@ Created on Oct 21, 2016
 '''
 
 #from Lib.Model.Model import Model
-from django.template.defaultfilters import default
 from django.db import models
 #import FrontEnd
 

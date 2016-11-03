@@ -19,6 +19,5 @@ import FrontEnd
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^categorias/$', FrontEnd.views.index),
 # test update desde la web
 ]
